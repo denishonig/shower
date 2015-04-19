@@ -1,5 +1,7 @@
 # Корпоративная тема 2GIS для Shower HTML presentation engine
 
+![demo](./demo.png)
+
 ## Установка зависимостей
 
 ```sh
