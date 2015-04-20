@@ -1,19 +1,57 @@
 # Корпоративная тема 2GIS для Shower HTML presentation engine
 
-![demo](./demo.png)
+[Демо сайт](http://shwr.me/) презентационного движка.
+
+Скриншот 2ГИС темы ![./demo.png](./demo.png)
+
+## Зачем мне это?
+
+* Избавление от вендора презентационного софта
+* Удобное для программистов редактирование презентации в любимом тексотовом редакторе
+* Красиво, из коробки
+* Кроссплатформено, работает нормальном браузере на любой ОС, не страшно что что-то "поедет"
+* Нет завязки на сетевое соединение
 
 ## Установка зависимостей
 
-```sh
-sudo apt-get install nodejs
-```
+### Ubuntu
+
+Ставим пакет nodejs
 
 ```sh
-# project root folder
+sudo apt-get install nodejs nodejs-legacy
+```
+
+Устанавливаем node пакеты
+```sh
+# папка с проектом
 npm install
 ```
 
-Так же можно использовать `bower`.
+### OSX
+
+Ставим [homebrew](http://brew.sh/)
+
+```sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Добавляем директории homebrew в переменную окружения PATH
+```sh
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+```
+
+Ставим пакет nodejs
+
+```sh
+brew install node
+```
+
+Устанавливаем node пакеты
+```sh
+# папка с проектом
+npm install
+```
 
 ## Смотрим в действии
 
@@ -25,7 +63,9 @@ npm install
 
 Читаем [Wiki](https://github.com/shower/shower/wiki) если возникли вопросы.
 
-## Экспорт презентации в HTML
+## Экспорт
+
+### HTML
 
 ```sh
 npm install -g grunt-cli
@@ -38,3 +78,7 @@ grunt --help
 ```
 
 Для экспорта и создания архива используем `grunt archive`. Для экспорта в папку используем `grunt export`.
+
+### PDF
+
+Экспорта в PDF нет из коробки, тк это HTML presentation engine :)
