@@ -86,4 +86,5 @@ grunt --help
 
 ### PDF
 
-Экспорта в PDF нет из коробки, тк это HTML presentation engine :)
+Экспорта в PDF нет из коробки, так как это HTML presentation engine :)
+Можно открыть презентацию в браузере и сделать печать в PDF файл.
