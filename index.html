@@ -2,7 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<title>{{ yyyy-mm-dd }}</title>
+	<title>2015-06-18</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,13 +14,13 @@
 	<header class="caption">
 		<h1>Презентация команды CD</h1>
 		<p>
-			{{ yyyy-mm-dd }}
+			2015-06-18
 		</p>
 	</header>
 
 	<section class="slide cover" id="title"><div>
 		<h2>Презентация команды CD</h2>
-		<p>{{ yyyy-mm-dd }}</p>
+		<p>2015-06-18</p>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
 		<style>
 			#title h2 {
@@ -37,9 +37,17 @@
 		</style>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>{{ slide_title}}</h2>
-		<p>{{ slide_content }}</p>
+	<section class="slide shout" id="openstack"><div>
+		<h2>OpenStack</h2>
+		<style>
+			#openstack div {
+				background-color: #00b2dd;
+			}
+			#openstack h2 {
+				font-size: 300%;
+				color: #fff;
+			}
+		</style>
 	</div></section>
 
     <section class="slide"><div>
@@ -82,6 +90,178 @@
             <img src="pictures/top_failed.png" width="100%">
 		</ul>
 	</div></section>
+
+	<section class="slide" id="os_commands"><div>
+		<h2>Новые команды</h2>
+		<ul>
+			<li>Unix</li>
+			<li>Search</li>
+			<li>Navi</li>
+		</ul>
+	</div></section>
+
+	<section class="slide" id="os_usage"><div>
+        <h2>Общее использование</h2>
+        <img src="pictures/os_usage.png" height="300" width="700" align=middle">
+        <ul>
+            <li>18 команд</li>
+            <li>~140 виртуальных машин</li>
+        </ul>
+	</div></section>
+
+	<section class="slide" id="os_nets"><div>
+        <h2>Уборка ресурсов</h2>
+        <div style="float: left;">
+            <img alt="123" border="o" src="pictures/os_net_before.png" title="Рис.1" height="400" /></div>
+        <div style="float: right;">
+            <img alt="345" border="o" src="pictures/os_net_after.png" title="Рис.2" height="400" /></div>
+	</div></section>
+
+	<section class="slide" id="os_cd_tasks"><div>
+		<h2>CD</h2>
+		<ul>
+			<li>Snapshot fix</li>
+			<li>Upgrade Juno c 10.1.2 до 10.1.6</li>
+			<li>Multiple Chef env для Heat</li>
+		</ul>
+	</div></section>
+
+	<section class="slide" id="os_admin_tasks"><div>
+		<h2>Admins</h2>
+		<ul>
+			<li>Централизованное логгирование</li>
+			<li>Zabbix для инфраструктурных нод</li>
+			<li>Monit</li>
+		</ul>
+	</div></section>
+
+	<section class="slide" id="os_common_tasks"><div>
+		<h2>CD & Admins</h2>
+		<ul>
+			<li>Подготовка к апгрейду на релиз Kilo</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout" id="sonar"><div>
+		<h2>Sonar</h2>
+		<style>
+			#sonar div {
+				background-color: #00b2dd;
+			}
+			#openstack h2 {
+				font-size: 300%;
+				color: #fff;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide" id="sonar_picture"><div>
+        <h2>Sonar</h2>
+        <img src="pictures/sonar.png" height="300" width="700" align=middle">
+	</div></section>
+
+	<section class="slide" id="sonar_list"><div>
+		<h2>Sonar</h2>
+		<ul>
+			<li>Интеграция с GitlabCI</li>
+			<li>Интеграция с Jira</li>
+            <li>Подключение нового проекта
+			<ul>
+                <li>1 файл в репозиторий</li>
+                <li>1 команда на запуск</li>
+            </ul>
+            </li>
+		</ul>
+	</div></section>
+
+
+	<section class="slide"><div>
+		<h2>{{ slide_title}}</h2>
+		<p>{{ slide_content }}</p>
+	</div></section>
+
+    <section class="slide shout" id="platform">
+        <div>
+            <h2>Платформа</h2>
+            <style>
+                #platform div { background-color: #00b2dd; }
+                #platform h2 { font-size: 400%; color: #fff; }
+            </style>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - State report</h2>
+            <img width="80%"src="pictures/start-report-deis.png" style="border: 1px dotted">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Логирование</h2>
+            <ul>
+                <li>Унификация</li>
+                <li>Обязательные пункты (json формат)</li>
+                <li>Рекомендательные пункты (stack trace, severity, etc)</li>
+                <li>2 формата логов
+                    <ul>
+                        <li>Access log</li>
+                        <li>Custom log</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <img width="100%" src="pictures/monitoring-deis.png" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Мониторинг</h2>
+            <ul>
+                <li>Cadvisor</li>
+                <li>Sensu</li>
+                <li>Elastic</li>
+                <li>Kibana</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Проекты</h2>
+                <ul>
+                    <li>CDWS
+                        <ul>
+                            <li>API + scheduler</li>
+                            <li>UI</li>
+                            <li>Flower</li>
+                            <li>gitlab CI runner (!)</li>
+                        </ul>
+                    </li>
+                    <li>"Погода" от Online</li>
+                    <li>"Квартиры" от Буклетов</li>
+                    <li>IPA - WebAPI прототип от Микросервисов</li>
+                    <li>UI Фоточек</li>
+                </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - deis.n1.nato</h2>
+            <ul>
+                <li>3x CoreOS nodes</li>
+                <li>8 Gb RAM</li>
+                <li>300 Gb Ceph storage</li>
+            </ul>
+        </div>
+    </section>
 
 	<section class="slide shout" id="objective"><div>
 		<h2>&ldquo;{{ shout_citation }}&rdquo;</h2>
