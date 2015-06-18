@@ -42,14 +42,72 @@
 		<p>{{ slide_content }}</p>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>{{ slide_title }}</h2>
-		<ul>
-			<li>{{ slide_item }}</li>
-			<li>{{ slide_item }}</li>
-			<li>{{ slide_item }}</li>
-		</ul>
-	</div></section>
+    <section class="slide">
+        <div>
+            <h2>Платформа - State report</h2>
+            <img width="80%"src="pictures/start-report-deis.png" style="border: 1px dotted">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Логирование</h2>
+            <ul>
+                <li>Унификация</li>
+                <li>Обязательные пункты (json формат)</li>
+                <li>Рекомендательные пункты (stack trace, severity, etc)</li>
+                <li>2 формата логов
+                    <ul>
+                        <li>Access log</li>
+                        <li>Custom log</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Мониторинг</h2>
+            <ul>
+                <li>Cadvisor</li>
+                <li>Sensu</li>
+                <li>Elastic</li>
+                <li>Kibana</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - Проекты</h2>
+            <ul>
+                <li>CDWS
+                    <ul>
+                        <li>API + scheduler</li>
+                        <li>UI</li>
+                        <li>Flower</li>
+                        <li>gitlab CI runner (!)</li>
+                    </ul>
+                </li>
+                <li>"Погода" от Online</li>
+                <li>"Квартиры" от Буклетов</li>
+                <li>IPA - WebAPI прототип от Микросервисов</li>
+                <li>UI Фоточек</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2>Платформа - deis.n1.nato</h2>
+            <ul>
+                <li>3x CoreOS nodes</li>
+                <li>8 Gb RAM</li>
+                <li>300 Gb Ceph storage</li>
+            </ul>
+        </div>
+    </section>
 
 	<section class="slide shout" id="objective"><div>
 		<h2>&ldquo;{{ shout_citation }}&rdquo;</h2>
