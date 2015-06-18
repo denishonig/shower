@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="ru">
 
 <head>
-	<title>{{ presentation_title }}</title>
+	<title>{{ yyyy-mm-dd }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,15 +12,15 @@
 
 <body class="list">
 	<header class="caption">
-		<h1>{{ presentation_title }}</h1>
+		<h1>Презентация команды CD</h1>
 		<p>
-			<a href="http://{{ presenter_web_site }}" title="{{ presenter_web_site_title }}">{{ presenter_web_site }}</a>, <a href="http://2gis.ru" title="2GIS City Map">2GIS</a>
+			{{ yyyy-mm-dd }}
 		</p>
 	</header>
 
 	<section class="slide cover" id="title"><div>
-		<h2>{{ presentation_title }}</h2>
-		<p>{{ presenter_name }}</p>
+		<h2>Презентация команды CD</h2>
+		<p>{{ yyyy-mm-dd }}</p>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
 		<style>
 			#title h2 {
@@ -144,12 +144,12 @@ key = value</code></pre>
 	</div></section>
 
 	<section class="slide cover" id="contacts"><div>
-		<h2>{{ presenter_name }}</h2>
+		<h2>Команда CD</h2>
 		<p>
-			{{ presenter_email }}<br>
-			<a href="http://{{ presenter_web_site }}" title="{{ presenter_web_site_title }}">{{ presenter_web_site }}</a>
+			сd@2gis.ru<br>
+			<a href="https://cd-2gis.slack.com/signup">cd-2gis.slack.com/signup</a>
 		</p>
-		<div><span></span><h2>{{ Thanks }}</h2></div>
+		<div><span></span><h2>Спасибо!</h2></div>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
 		<style>
 			#contacts h2 {
