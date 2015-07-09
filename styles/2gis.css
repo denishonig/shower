@@ -71,3 +71,81 @@
 	border-bottom-color: #00b2dd;
 }
 .full .progress div[style*='100%']{left:-10px}
+
+.cover-downloaded-picture p {
+	font-size: 50%;
+	position: absolute;
+	top: 600px;
+}
+
+.cover-title h2 {
+	position: relative;
+	top: 200px;
+	left: 40px;
+}
+.cover-title p {
+	position: relative;
+	top: 200px;
+	left: 40px;
+	font-size: 32px;
+}
+.cover-downloaded-picture p {
+	font-size: 50%;
+	position: absolute;
+	top: 600px;
+}
+.cover-contacts h2 {
+	position: relative;
+	top: 200px;
+	left: 40px;
+}
+.cover-contacts p {
+	position: relative;
+	top: 200px;
+	left: 40px;
+	font-size: 32px;
+}
+.cover-contacts div div {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	top: -120px;
+	left: 550px;
+	background: #00b2dd;
+	border-radius: 50%;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: middle;
+}
+.cover-contacts div div span {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.cover-contacts div div h2 {
+	z-index: auto;
+	vertical-align: middle;
+	position: static;
+	display: inline-block;
+	margin-bottom: 0;
+	color: #fff;
+}
+
+.section-begin div {
+	background-color: #00b2dd;
+}
+.section-begin h2 {
+	font-size: 100px!important;
+	color: #fff;
+}
+.section-demo div {
+	background-color: #a6ce38;
+}
+
+.list-compact li {
+	font-size: 22px;
+}
+
+.list-large li {
+	font-size: 32px;
+}

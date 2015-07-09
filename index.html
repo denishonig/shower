@@ -2,7 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<title>2015-06-18</title>
+	<title>2015-07-16</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,314 +14,80 @@
 	<header class="caption">
 		<h1>Презентация команды CD</h1>
 		<p>
-			2015-06-18
+			2015-07-16
 		</p>
 	</header>
 
-	<section class="slide cover" id="title"><div>
+	<section class="slide cover cover-title"><div>
 		<h2>Презентация команды CD</h2>
-		<p>2015-06-18</p>
+		<p>2015-07-16</p>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
-		<style>
-			#title h2 {
-				position: relative;
-				top: 200px;
-				left: 40px;
-			}
-			#title p {
-				position: relative;
-				top: 200px;
-				left: 40px;
-				font-size: 32px;
-			}
-		</style>
 	</div></section>
 
-    <section class="slide shout" id="openstack"><div>
+	<section class="slide shout section-begin"><div>
 		<h2>OpenStack</h2>
-		<style>
-			#openstack div {
-				background-color: #00b2dd;
-			}
-			#openstack h2 {
-				font-size: 300%;
-				color: #fff;
-			}
-		</style>
 	</div></section>
 
+	<section class="slide cover cover-downloaded-picture"><div>
+		<img src="pictures/spongebob.jpg" width="1024" height="640">
+	</div></section>
 
-
-	<section class="slide" id="os_commands"><div>
-		<h2>Новые команды</h2>
-		<ul>
-			<li>Unix</li>
-			<li>Search</li>
-			<li>Navi</li>
+	<section class="slide"><div>
+		<h2>Подготовка</h2>
+		<ul><a href="https://jira.2gis.ru/browse/INFRADM-229">INFRADM-229</a>
+			<li>Чеклист</li>
+			<li>Изучение upgrade & release notes</li>
+			<li>Тестирование и fix проблем</li>
+			<li>Работа с инструментом деплоймента</li>
+			<li>Backup и rollback сценарий</li>
 		</ul>
 	</div></section>
 
-	<section class="slide" id="os_usage"><div>
-        <h2>Общее использование</h2>
-        <img src="pictures/os_usage.png" height="300" width="700" align="middle">
-        <ul>
-            <li>18 команд</li>
-            <li>~140 виртуальных машин</li>
-        </ul>
+	<section class="slide cover cover-downloaded-picture"><div>
+		<img src="pictures/run-fools.png" width="1024" height="640">
 	</div></section>
 
-	<section class="slide" id="os_nets"><div>
-        <h2>Уборка ресурсов</h2>
-        <div style="float: left;">
-            <img alt="123" border="o" src="pictures/os_net_before.png" title="Рис.1" height="400" /></div>
-        <div style="float: right;">
-            <img alt="345" border="o" src="pictures/os_net_after.png" title="Рис.2" height="400" /></div>
-	</div></section>
-
-	<section class="slide" id="os_cd_tasks"><div>
-		<h2>CD</h2>
+	<section class="slide"><div>
+		<h2>Реальность</h2>
 		<ul>
-			<li>Snapshot fix</li>
-			<li>Upgrade Juno c 10.1.2 до 10.1.6</li>
-			<li>Multiple Chef env для Heat</li>
+			<li><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=162365834">Блокеры</a></li>
+			<li>2 дня downtime и 4 попытки с revert'ом</li>
+			<li>Post-revert баги</li>
+			<li>Недовольные пользователи</li>
 		</ul>
 	</div></section>
 
-	<section class="slide" id="os_admin_tasks"><div>
-		<h2>Admins</h2>
+	<section class="slide cover cover-downloaded-picture"><div>
+		<img src="pictures/SAY_CLOUD_AGAIN.png" width="1024" height="640">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Ретра</h2>
 		<ul>
-			<li>Централизованное логгирование</li>
-			<li>Zabbix для инфраструктурных нод</li>
-			<li>Monit</li>
+			<li>Опыт</li>
+			<li>Понимание блокеров и порядка действий</li>
+			<li>Понимание инструментов для upgrade</li>
+			<li>Automate all the things и подготовка к следующей попытке через 1-2 месяца</li>
 		</ul>
 	</div></section>
 
-	<section class="slide" id="os_common_tasks"><div>
-		<h2>CD & Admins</h2>
-		<ul>
-			<li>Подготовка к апгрейду на релиз Kilo</li>
-		</ul>
+	<section class="slide"><div>
+		<h2>Общее использование</h2>
+		<pre>
+			<code>$ nova hypervisor-stats</code>
+			running_vms: 166
+		</pre>
 	</div></section>
 
-	<section class="slide shout" id="sonar"><div>
-        <h2>Code analysis tool</h2>
-		<style>
-			#sonar div {
-				background-color: #00b2dd;
-			}
-			#sonar h2 {
-				font-size: 300%;
-				color: #fff;
-			}
-		</style>
+	<section class="slide shout section-begin"><div>
+		<h2>Платформа</h2>
 	</div></section>
 
-	<section class="slide" id="sonar_picture"><div>
-        <h2>SonarQube</h2>
-        <img src="pictures/sonar.png" height="300" width="700" align="middle">
-	</div></section>
-
-	<section class="slide" id="sonar_list"><div>
-		<h2>SonarQube</h2>
-		<ul>
-			<li>Интеграция с GitlabCI</li>
-			<li>Интеграция с Jira</li>
-            <li>Подключение нового проекта
-			<ul>
-                <li>1 файл в репозиторий</li>
-                <li>1 команда на запуск</li>
-            </ul>
-            </li>
-		</ul>
-	</div></section>
-
-<section class="slide shout" id="cdws"><div>
+	<section class="slide shout section-begin"><div>
 		<h2>CDWS</h2>
-		<style>
-			#cdws div {
-				background-color: #00b2dd;
-			}
-			#cdws h2 {
-				font-size: 300%;
-				color: #fff;
-			}
-		</style>
 	</div></section>
 
-    <section class="slide"><div>
-        <h2>CDWS</h2>
-        <h3>Закрыто 34 задачи</h3>
-	</div></section>
-
-    <section class="slide"><div>
-		<h2>Terminate launch</h2>
-		<ul>
-            <hr/>
-            <img src="pictures/terminate_01.png" width="95%">
-            <hr/>
-            <img src="pictures/terminate_02.png" width="40%">
-            <hr/>
-            <img src="pictures/terminate_03.png" width="95%">
-            <hr/>
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>Multiple conclusive tasks</h2>
-		<ul>
-            <img src="pictures/multi_conclusive.png" width="80%">
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>New charts</h2>
-		<ul>
-            <pre><code><mark class="comment">[failed tests, skipped tests, total tests count]</mark>
-<img src="pictures/chart_03.png" width="100%">
-            </code></pre>
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>New charts</h2>
-		<ul>
-            <pre><code><mark class="comment">[you can select period]</mark>
-<img src="pictures/chart_02.png" width="100%">
-            </code></pre>
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>Failed tests statistics</h2>
-		<ul>
-            <img src="pictures/top_failed.png" width="100%">
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>UI tests in GitLab-CI</h2>
-		<ul>
-            <hr/>
-            <img src="pictures/ci_01.png" width="100%">
-            <hr/>
-            <img src="pictures/ci_02.png" width="100%">
-		</ul>
-	</div></section>
-    <section class="slide"><div>
-		<h2>Aвторизация через Active Directory</h2>
-		<ul>
-            <pre><code><mark class="comment">[логин/пароль как в почте]</mark>
-            </code></pre>
-		</ul>
-	</div></section>
-    <section class="slide">
-        <div>
-            <h2>Логирование</h2>
-            <img src="pictures/cdws-logging-mon.png" width="100%">
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>Python 3 support</h2>
-            <ul>
-                <li>Переход c версии 2.7 на 3.4</li>
-                <li>Улучшение производительности</li>
-                <li>Нет больше зависимости на кучу C-шных библиотек</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Code analysis and coverage</h2>
-            <ul>
-                <li>API Technical Debt Ratio - 0.3 %</li>
-                <li>UI Technical Debt Ratio - 0.7 %</li>
-                <li>API Code coverage - 90% <a href="http://sonar.cd.ostack.test:9000/">тут</a></li>
-                <li>UI Code coverage not implemented yet</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide shout" id="platform">
-        <div>
-            <h2>Платформа</h2>
-            <style>
-                #platform div { background-color: #00b2dd; }
-                #platform h2 { font-size: 400%; color: #fff; }
-            </style>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Платформа - State report</h2>
-            <img width="80%"src="pictures/start-report-deis.png" style="border: 1px dotted">
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Платформа - Логирование</h2>
-            <ul>
-                <li>Унификация</li>
-                <li>Обязательные пункты (json формат)</li>
-                <li>Рекомендательные пункты (stack trace, severity, etc)</li>
-                <li>2 формата логов
-                    <ul>
-                        <li>Access log</li>
-                        <li>Custom log</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <img width="100%" src="pictures/monitoring-deis.png" />
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Платформа - Мониторинг</h2>
-            <ul>
-                <li>Cadvisor</li>
-                <li>Sensu</li>
-                <li>Elastic</li>
-                <li>Kibana</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Платформа - Проекты</h2>
-                <ul>
-                    <li>CDWS
-                        <ul>
-                            <li>API + scheduler</li>
-                            <li>UI</li>
-                            <li>Flower</li>
-                            <li>gitlab CI runner (!)</li>
-                        </ul>
-                    </li>
-                    <li>"Погода" от Online</li>
-                    <li>"Квартиры" от Буклетов</li>
-                    <li>IPA - WebAPI прототип от Микросервисов</li>
-                    <li>UI Фоточек</li>
-                </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Платформа - deis.n1.nato</h2>
-            <ul>
-                <li>3x CoreOS nodes</li>
-                <li>8 Gb RAM</li>
-                <li>300 Gb Ceph storage</li>
-            </ul>
-        </div>
-    </section>
-
-	<section class="slide cover" id="contacts"><div>
+	<section class="slide cover cover-contacts"><div>
 		<h2>Команда CD</h2>
 		<p>
 			сd@2gis.ru<br>
@@ -329,44 +95,6 @@
 		</p>
 		<div><span></span><h2>Спасибо!</h2></div>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
-		<style>
-			#contacts h2 {
-				position: relative;
-				top: 200px;
-				left: 40px;
-			}
-			#contacts p {
-				position: relative;
-				top: 200px;
-				left: 40px;
-				font-size: 32px;
-			}
-			#contacts div div {
-				width: 250px;
-				height: 250px;
-				position: relative;
-				top: -120px;
-				left: 550px;
-				background: #00b2dd;
-				border-radius: 50%;
-				white-space: nowrap;
-				text-align: center;
-				vertical-align: middle;
-			}
-			#contacts div div span {
-				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
-			}
-			#contacts div div h2 {
-				z-index: auto;
-				vertical-align: middle;
-				position: static;
-				display: inline-block;
-				margin-bottom: 0;
-				color: #fff;
-			}
-		</style>
 	</div></section>
 
 	<div class="progress"><div></div></div>
