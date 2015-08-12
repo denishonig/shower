@@ -2,7 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<title>2015-07-16</title>
+	<title>2015-08-13</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,18 +14,18 @@
 	<header class="caption">
 		<h1>Презентация команды CD</h1>
 		<p>
-			2015-07-16
+			2015-08-13
 		</p>
 	</header>
 
 	<section class="slide cover cover-title"><div>
 		<h2>Презентация команды CD</h2>
-		<p>2015-07-16</p>
+		<p>2015-08-13</p>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
 	</div></section>
 
 	<section class="slide shout section-begin"><div>
-		<h2>OpenStack</h2>
+		<h2>OpenStack  upgrade</h2>
 	</div></section>
 
 	<section class="slide cover cover-downloaded-picture"><div>
@@ -33,12 +33,12 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Подготовка</h2>
+		<h2>Подготовка к in-place upgrade</h2>
 		<ul><a href="https://jira.2gis.ru/browse/INFRADM-229">INFRADM-229</a>
-			<li>Чеклист</li>
 			<li>Изучение upgrade & release notes</li>
-			<li>Тестирование и fix проблем</li>
-			<li>Работа с инструментом деплоймента</li>
+			<li>Составление чеклиста</li>
+			<li>Тестирование и починка проблем</li>
+			<li>Портирование кастомизаций для инструмента деплоймента</li>
 			<li>Backup и rollback сценарий</li>
 		</ul>
 	</div></section>
@@ -61,14 +61,50 @@
 		<img src="pictures/SAY_CLOUD_AGAIN.png" width="1024" height="640">
 	</div></section>
 
+	<section class="slide shout section-begin"><div>
+		<h2>Что дальше?</h2>
+	</div></section>
+
 	<section class="slide"><div>
-		<h2>Ретра</h2>
+		<h2>Немного формальностей</h2>
 		<ul>
-			<li>Опыт</li>
-			<li>Понимание блокеров и порядка действий</li>
-			<li>Понимание инструментов для upgrade</li>
-			<li>Automate all the things и подготовка к следующей попытке через 1-2 месяца</li>
+			<li><a href="https://confluence.2gis.ru/display/CD/Testing">Требования</a></li>
+			<li><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=165184449">Roadmap до конца года</a></li>
 		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>MVP автотесты</h2>
+		<ul><a href="https://jira.2gis.ru/browse/CD-702">CD-702</a>
+			<li><a href="http://gitlab-ci.2gis.local/projects/35">CI</a></li>
+			<li><a href="http://openstack-jenkins.cd.ostack.test/">Интеграционные тесты</a></li>
+			<li><a href="http://cdws.web.2gis.local/#/testplan/91">Репортинг в CDWS</a></li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Инструменты деплоймента</h2>
+		<ul><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=167510801">Исследование</a>
+			<li>Обзор вариантов апгрейда, блокеров и порядка действий</li>
+			<li>Обзор других инструментов</li>
+			<li>Выбор и разработка альтернативного варианта</li>
+			<li>Демо-стенд</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Больше автотестов</h2>
+		<ul><a href="https://jira.2gis.ru/browse/CD-702">CD-702</a>
+			<li>Сборки</li>
+			<li>Покомпонентное тестирование</li>
+			<li>Регрессии</li>
+			<li>Регулярные запуски тестов на рабочей инсталляции</li>
+			<li>Статистика в CDWS</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout section-begin"><div>
+		<h2>OpenStack common</h2>
 	</div></section>
 
 	<section class="slide"><div>
