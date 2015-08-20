@@ -72,6 +72,7 @@
 }
 .full .progress div[style*='100%']{left:-10px}
 
+
 .cover-downloaded-picture p {
 	font-size: 50%;
 	position: absolute;
@@ -89,11 +90,7 @@
 	left: 40px;
 	font-size: 32px;
 }
-.cover-downloaded-picture p {
-	font-size: 50%;
-	position: absolute;
-	top: 600px;
-}
+
 .cover-contacts h2 {
 	position: relative;
 	top: 200px;
@@ -140,6 +137,10 @@
 }
 .section-demo div {
 	background-color: #a6ce38;
+}
+
+.shout-yellow div {
+	background-color: #f9ec00;
 }
 
 .list-compact li {

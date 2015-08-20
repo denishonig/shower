@@ -2,7 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 
 <head>
-	<title>2015-08-13</title>
+	<title>{{ yyyy-mm-dd }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,263 +14,72 @@
 	<header class="caption">
 		<h1>Презентация команды CD</h1>
 		<p>
-			2015-08-13
+			{{ yyyy-mm-dd }}
 		</p>
 	</header>
 
 	<section class="slide cover cover-title"><div>
 		<h2>Презентация команды CD</h2>
-		<p>2015-08-13</p>
+		<p>{{ yyyy-mm-dd }}</p>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
 	</div></section>
 
 	<section class="slide shout section-begin"><div>
-		<h2>OpenStack  upgrade</h2>
-	</div></section>
-
-	<section class="slide cover cover-downloaded-picture"><div>
-		<img src="pictures/spongebob.jpg" width="1024" height="640">
+		<h2>{{ section_one }}</h2>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Подготовка к in-place upgrade</h2>
-		<ul><a href="https://jira.2gis.ru/browse/INFRADM-229">INFRADM-229</a>
-			<li>Изучение upgrade & release notes</li>
-			<li>Составление чеклиста</li>
-			<li>Тестирование и починка проблем</li>
-			<li>Портирование кастомизаций для инструмента деплоймента</li>
-			<li>Backup и rollback сценарий</li>
+		<h2>{{ slide_title }}</h2>
+		<p>{{ slide_content }}</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>{{ slide_title }}</h2>
+		<ul>Pros
+			<li>{{ one }}</li>
+			<li>{{ two }}</li>
 		</ul>
-	</div></section>
-
-	<section class="slide cover cover-downloaded-picture"><div>
-		<img src="pictures/run-fools.png" width="1024" height="640">
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Реальность</h2>
-		<ul>
-			<li><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=162365834">Блокеры</a></li>
-			<li>2 дня downtime и 4 попытки с revert'ом</li>
-			<li>Post-revert баги</li>
-			<li>Недовольные пользователи</li>
-		</ul>
-	</div></section>
-
-	<section class="slide cover cover-downloaded-picture"><div>
-		<img src="pictures/SAY_CLOUD_AGAIN.png" width="1024" height="640">
-	</div></section>
-
-	<section class="slide shout section-begin"><div>
-		<h2>Что дальше?</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Немного формальностей</h2>
-		<ul>
-			<li><a href="https://confluence.2gis.ru/display/CD/Testing">Требования</a></li>
-			<li><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=165184449">Roadmap до конца года</a></li>
+		<ul>Cons
+			<li>{{ one }}</li>
+			<li>{{ two }}</li>
 		</ul>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>MVP автотесты</h2>
-		<ul><a href="https://jira.2gis.ru/browse/CD-702">CD-702</a>
-			<li><a href="http://gitlab-ci.2gis.local/projects/35">CI</a></li>
-			<li><a href="http://openstack-jenkins.cd.ostack.test/">Интеграционные тесты</a></li>
-			<li><a href="http://cdws.web.2gis.local/#/testplan/91">Репортинг в CDWS</a></li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Инструменты деплоймента</h2>
-		<ul><a href="https://confluence.2gis.ru/pages/viewpage.action?pageId=167510801">Исследование</a>
-			<li>Обзор вариантов апгрейда, блокеров и порядка действий</li>
-			<li>Обзор других инструментов</li>
-			<li>Выбор и разработка альтернативного варианта</li>
-			<li>Демо-стенд</li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Больше автотестов</h2>
-		<ul><a href="https://jira.2gis.ru/browse/CD-702">CD-702</a>
-			<li>Сборки</li>
-			<li>Покомпонентное тестирование</li>
-			<li>Регрессии</li>
-			<li>Регулярные запуски тестов на рабочей инсталляции</li>
-			<li>Статистика в CDWS</li>
-		</ul>
-	</div></section>
-
-	<section class="slide shout section-begin"><div>
-		<h2>OpenStack common</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Общее использование</h2>
-		<img src="pictures/os_summary_2015_08_13.png" width="850" height="400">
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Разное</h2>
-		<ul>
-			<li>Новые сервисы
-                <ul>
-                    <li>Trove - DBaaS</li>
-                    <li>Ceilometer - resourse usage</li>
-                </ul>
-            </li>
-			<li>Много заявок на ресурсы</li>
-			<li>Новые проекты: QA Automation, WebAPI DND, Square</li>
-		</ul>
-	</div></section>
-
-
-	<section class="slide shout section-begin"><div>
-		<h2>Платформа</h2>
-	</div></section>
-
-	<section class="slide">
-        <div>
-            <h2>Текущие фичи dev инфраструктуры</h2>
-            <ul><a href="https://confluence.2gis.ru/display/CD/State+report">State Report</a>
-                <li>Stateless cluster(!)</li>
-                <li>5 CoreOS nodes</li>
-                <li>Балансировка на haproxy</li>
-                <li>Сборка проектов на python,nodejs,scala,php</li>
-                <li>Масштабирование из коробки</li>
-                <li>Поддержка Dockerfile и Docker images</li>
-                <li>Мониторинг платформ и приложений</li>
-            </ul>
-        </div>
-    </section>
-	<section class="slide">
-        <div>
-            <h2>Текущие фичи dev инфраструктуры 2</h2>
-            <ul>
-                <li>Логирование платформ и приложений</li>
-                <li>Домен web.2gis.local, можно писать домены как domain.web.2gis</li>
-                <li>Сертификаты *.web.2gis.local, ваше приложение работает по https по умолчанию</li>
-                <li>Возможность интеграции с gitlab CI, релиз по мержу в мастер</li>
-                <li>Аутентификация через LDAP</li>
-                <li>Возможность проведения нагрузочных тестов</li>
-                <li>Хранение конфигурации</li>
-            </ul>
-        </div>
-    </section>
-	<section class="slide">
-        <div>
-            <h2>Текущие фичи dev инфраструктуры 3</h2>
-            <ul>
-                <li>История деплоя и конфигураций</li>
-                <li>Быстрый откат(!) на почти любую версию</li>
-                <li>Zero downtime deployment</li>
-                <li>...</li>
-            </ul>
-        </div>
-    </section>
-	<section class="slide">
-        <div>
-            <h2>Текущие фичи production кластера</h2>
-            <ul>Тоже что и dev +
-                <li>*.api.2gis.ru сертификат</li>
-                <li>LVS tcp balancer</li>
-            </ul>
-        </div>
-    </section>
-	<section class="slide">
-        <div>
-            <h2>Мы позаботились об инфраструктуре</h2>
-        </div>
-    </section>
-	<section class="slide">
-        <div>
-            <img src="pictures/ash.jpg" style="float:right" width="400">
-            <h1>Так это штоа?... Теперь можно просто программировать?!</h1>
-        </div>
-    </section>
-	<section class="slide shout section-begin"><div>
-        <h2>Да</h2>
-    </section>
-
-	<section class="slide shout section-begin"><div>
-		<h2>CDWS</h2>
-	</div></section>
-
-	<section class="slide"><div>
-        <h3>Закрыто 40 задач</h3>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Job notifications</h2>
-		<ul>
-            <img src="pictures/dashboard.png" width="100%">
-			Нотификации от:
-			<ul type="square">
-				<li>jenkins</li>
-				<li>rundeck</li>
-			</ul>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Nunit & Enterprise UI tests</h2>
-		<ul>
-			<li>поддержка формата nunit</li>
-			<li>api метод, принимающий xml</li>
-		</ul>
-		<ul>
-			Проекты:
-            <pre><code><mark>[BuildMan, GoldMine, InfoRussia, Youla]</mark>
-            </code></pre>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>New menu</h2>
-		<ul>
-            <img src="pictures/menu_cdws.png" width="100%">
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Metrics</h2>
-		<ul>
-            <img src="pictures/met_01.png" width="100%">
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>Metrics</h2>
-		<ul>
-			Добавление/обновление/удаление метрик
+		<h2>{{ slide_title }}</h2>
 			<ul>
-				<li>при наличии пермиссий</li>
-				<li>восстановление данных за период</li>
-				<li>total count, cycle time, lead time</li>
-				<li>сортировка метрик</li>
-				<li>подсказки с примерами</li>
+				<li>{{ link_name }} <a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
+				<li><a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
+				<li><a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
 			</ul>
-		</ul>
+	</div></section>
+
+	<section class="slide cover cover-downloaded-picture"><div>
+		<img src="pictures/picture.jpg" alt="{{ downloaded_picture }}">
+		<p class="note">Image from <a href="{{ downloaded_picture_url }}">{{ downloaded_picture_url }}</a></p>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Metrics</h2>
-		<ul>Автоматический сбор значений по метрикам
-		<p><i>с информированием об ошибках</i></p></ul>
-
+		<h2>{{ slide_title }}</h2>
+		<p>{{ code_title }}</p>
+		<code>
+			{{ code }}
+		</code>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Metrics</h2>
-		<img src="pictures/met_02.png" width="90%">
+		<h2>{{ preformatted_text_title }}</h2>
+		<pre><code><mark class="comment"># {{ some_ini_file }}</mark>
+[section]
+key = value</code></pre>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Metrics</h2>
-		Интеграция с confluence
-		<img src="pictures/met_04.png" width="100%">
+	<section class="slide shout shout-yellow"><div>
+		<h2>{{ shout_title }}</h2>
+	</div></section>
+
+	<section class="slide shout section-demo"><div>
+		<h2>{{ section_demo }}</h2>
 	</div></section>
 
 	<section class="slide cover cover-contacts"><div>
