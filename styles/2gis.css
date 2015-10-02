@@ -128,19 +128,21 @@
 	color: #fff;
 }
 
-.section-begin div {
+.section div {
 	background-color: #00b2dd;
 }
-.section-begin h2 {
+.section h2 {
 	font-size: 100px!important;
 	color: #fff;
 }
-.section-demo div {
-	background-color: #a6ce38;
-}
-
-.shout-yellow div {
+.section-yellow div {
 	background-color: #f9ec00;
+}
+.section-orange div {
+	background-color: #e77c4f;
+}
+.section-green div {
+	background-color: #a6ce38;
 }
 
 .list-compact li {
