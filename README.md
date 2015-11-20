@@ -1,7 +1,7 @@
 # Shower presentations команды CD
 
-Форк репозитория https://gitlab.2gis.local/shower/shower-2gis-theme
-Вся документация о работе с движком в [README](https://gitlab.2gis.local/shower/shower-2gis-theme/blob/master/README.md)
+Форк репозитория https://gitlab.2gis.ru/shower/shower-2gis-theme
+Вся документация о работе с движком в [README](https://gitlab.2gis.ru/shower/shower-2gis-theme/blob/master/README.md)
 
 ## Порядок действий
 
