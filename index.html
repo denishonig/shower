@@ -110,71 +110,158 @@
 		</ul>
 	</div></section>
 
-
-
-	<section class="slide shout section section-yellow"><div>
-		<h2>{{ shout_title }}</h2>
-	</div></section>
-
 	<section class="slide shout section section-green"><div>
-		<h2>{{ shout_title }}</h2>
-	</div></section>
-
-	<section class="slide shout section section-orange"><div>
-		<h2>{{ shout_title }}</h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>{{ slide_title }}</h2>
-		<p>{{ slide_content }}</p>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>{{ slide_title }}</h2>
-		<ul>Pros
-			<li>{{ one }}</li>
-			<li>{{ two }}</li>
-		</ul>
-		<ul>Cons
-			<li>{{ one }}</li>
-			<li>{{ two }}</li>
-		</ul>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>{{ slide_title }}</h2>
-			<ul>
-				<li>{{ link_name }} <a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
-				<li><a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
-				<li><a href="{{ link_url }}" title="{{ link_title }}">{{ link_text }}</a></li>
-			</ul>
+		<h2>2 ГИС</h2>
 	</div></section>
 
 	<section class="slide cover cover-downloaded-picture"><div>
-		<img src="pictures/picture.jpg" alt="{{ downloaded_picture }}">
-		<p class="note">Image from <a href="{{ downloaded_picture_url }}">{{ downloaded_picture_url }}</a></p>
+		<img src="pictures/map.png" width="100%" height="100%">
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>{{ slide_title }}</h2>
-		<p>{{ code_title }}</p>
-		<code>
-			{{ code }}
-		</code>
+		<h2>2 ГИС</h2>
+		<ul>
+			<li>Справочник и карты</li>
+			<li>Web, Mobile, Desktop</li>
+			<li>35 команд</li>
+		</ul>
+        <img src="pictures/products.png" align="right">
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>{{ preformatted_text_title }}</h2>
-		<pre><code><mark class="comment"># {{ some_ini_file }}</mark>
-[section]
-key = value</code></pre>
+		<h2>Проблемы</h2>
+        <p>Конец 2013 - Proxmox Virtual Environment</p>
+		<ul>
+			<li>Виртуалка = тикет админам</li>
+			<li>Нет разделения по проектам</li>
+			<li>Слабый API</li>
+            <li>Платные плагины</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Что у нас есть?</h2>
+		<ul>
+			<li>Свое железо</li>
+			<li>Системный администраторы</li>
+			<li>Опыт в виртуализации</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Требования к решению</h2>
+		<ul>
+			<li>Эффективная утилизация железа</li>
+			<li>Командные ресурсы</li>
+			<li>Модульность</li>
+			<li>Легко дорабатывать</li>
+			<li>API</li>
+			<li>Изоляция</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Варианты</h2>
+		<ul>
+			<li>Публичное облако (AWS, Digital Ocean, Rackspace)</li>
+			<li>Приватное облако (VMware, HP)</li>
+			<li>Приватное облако open-source (Apache Cloudstack, OpenStack)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide cover cover-title"><div>
+		<img src="pictures/openstack.jpg" hspace="100">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>OpenStack</h2>
+        <p>
+        Набор сервисов для построения публичного или приватного облака
+        </p>
+	</div></section>
+
+	<section class="slide"><div>
+    <!-- todo Добавить ссылки -->
+		<h2>OpenStack</h2>
+		<ul>
+			<li>Релиз раз в полгода</li>
+			<li>Базовые компоненты</li>
+			<li>Инкубатор</li>
+            <li>Конференции, встречи, maillists</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Контрибьюторы OpenStack</h2>
+        <p>openstack.org/foundation/companies</p>
+		<ul>
+			<li>Red Hat</li>
+			<li>Rackspace</li>
+			<li>IBM</li>
+            <li>Intel</li>
+            <li>Cisco</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Решение проблем инфраструктуры</h2>
+		<ul>
+			<li>Эффективная утилизация железа</li>
+			<li>Командные ресурсы</li>
+			<li>Модульность</li>
+			<li>Легко дорабатывать</li>
+			<li>API</li>
+			<li>Изоляция</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout section section-green"><div>
+		<h2>Инфраструктура по требованию</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Инфраструктура по требованию</h2>
+		<pre>
+            <code>server:</code>
+            <code>  depends_on: [ ip_address, dns_record ]</code>
+            <code>  type: OS::Nova::Server</code>
+            <code>  properties:</code>
+            <code>      name: { get_param: name } </code>
+            <code>      flavor: { get_param: flavor } </code>
+            <code>      image: { get_param: image } </code>
+            <code>      key_name: { get_param: key_name } </code>
+		</pre>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Инфраструктура по требованию</h2>
+        <pre>
+            <code> heat stack-create API -f api.yml \ </code>
+            <code> -P key_name="id_rsa" \ </code>
+            <code> -P name=api-all-in-one \ </code>
+            <code> -P flavor=medium \ </code>
+            <code> -P image="ubuntu-14.04-x64" </code>
+        </pre>
+	</div></section>
+
+	<section class="slide shout section section-green"><div>
+		<h2>Итог</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Итог</h2>
+		<ul>
+			<li>Разгрузили админов</li>
+			<li>CI в командах</li>
+            <li>Развитие автоматизации</li>
+			<li>Быстрый deploy продуктов</li>
+		</ul>
 	</div></section>
 
 	<section class="slide cover cover-contacts"><div>
-		<h2>Команда CD</h2>
+		<h2>Яковлев Денис</h2>
 		<p>
-			сd@2gis.ru<br>
-			<a href="https://cd-2gis.slack.com/signup">cd-2gis.slack.com/signup</a>
+			Вопросы?<br>
 		</p>
 		<div><span></span><h2>Спасибо!</h2></div>
 		<img src="pictures/2gis-cover.png" alt="2GIS Logo">
